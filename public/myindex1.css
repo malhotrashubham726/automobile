@@ -1,0 +1,254 @@
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.blockmy{
+    background-color: blue;
+    padding: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.headingmy{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.navmy{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.flexmy{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: blue;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.stickmy{
+    position: sticky;
+    top: 0px;
+}
+
+.navmy:hover,.buttonLink:hover{
+    color: black;
+    background-color: white;
+}
+
+.buttonLink{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: 0px solid blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.resize-img{
+    width: 30px;
+    height: 25px;
+}
+
+.float-leftmy{
+    float: left;
+    height: 650px;
+    width: 40%;
+}
+
+.contentmy{
+    margin-left: 43%;
+    margin-top: 15px;
+}
+
+.topmy{
+    margin-top: 0px;
+}
+
+.togglemy{
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.togglemy-blue{
+    background-color: blue;
+}
+
+.togglemy-black{
+    background-color: black;
+}
+
+.cardsmy{
+    padding: 10px;
+    margin: 20px 0px 0px 10px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cardsmyservice{
+    height: 480px;
+    width: 420px;
+}
+
+.frameimgmy{
+    width: 90%;
+    height: 60%;
+}
+
+.centermy{
+    margin-top: 40px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.textboxmy{
+    width: 80%;
+    border-radius: 4px;
+}
+
+.center-boxmy{
+    margin: auto;
+    border: 4px solid black;
+    height: 280px;
+    width: 330px;
+    background-color: darkkhaki;
+}
+
+.padmy{
+    padding: 10px;
+}
+
+.margin-padmy{
+    margin-top: 20px;
+}
+
+.flex-cardsmy{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.activemy{
+    color: black !important;
+    font-weight: 700;
+}
+
+.linkbtnmy{
+    color: white;
+    text-decoration: none;
+}
+
+.datemy{
+    float: right;
+    margin-top: 20px;
+}
+
+.alignmy{
+    text-align: left;
+    margin-top: 60px;
+}
+
+.fontawesome-delete{
+    float: left;
+}
+
+.fontawesome-edit{
+    float: right;
+}
+
+.fontawesome-user{
+    float: right;
+    color: black;
+}
+
+.servicesmy{
+    margin-left: 40px;
+}
+
+.service-imgmy{
+    width: 45%;
+    height: 30%;
+}
+
+.align-centermy{
+    text-align: center;
+    border: 2px solid black;
+    background-color: pink;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.dark-modemy{
+    background-color: black;
+    color: white;
+}
+
+.alertmy{
+    background-color: grey;
+    height: 70px;
+    padding: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.alert-user{
+    float: left;
+    color: white;
+}
+
+.contact{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.darkmy-mode{
+    background-color: black;
+    height: 550px;
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .navmy,.buttonLink{
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 17px;
+    }
+    .firstmy {
+        margin-left: 0px;
+    }
+    .flex-cardsmy{
+       flex-direction: column;
+    }
+    .cardsmy{
+        width: 320px;
+        float: right;
+        overflow: hidden;
+    }
+    .service-imgmy{
+        width: 80%;
+    }
+    .topmy{
+        display: flex;
+        flex-direction: column;
+    }
+    .contentmy{
+        margin-left: 20px;
+    }
+    .float-leftmy{
+        margin-left: 20px;
+        height: 400px;
+        width: 300px;
+    }
+}
