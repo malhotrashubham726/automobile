@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "./auto2.jpg";
+import img1 from "./carmaintenance.jpg";
 import img2 from "./auto3.jpg";
 import img3 from "./auto4.jpg";
 import { Link } from "react-router-dom";

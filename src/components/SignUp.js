@@ -38,7 +38,7 @@ const SignUp = (props) => {
     }
 
     else {
-      alert("Please enter valid inputs");
+      props.showAlert("Please enter valid inputs");
     }
   }
 
@@ -50,7 +50,7 @@ const SignUp = (props) => {
         Email* : <br />
         <input className="textboxmy padmy" type="email" name="email" id="" placeholder="abc@mail.com" onChange={handleOnChange} required /><br /><br />
         Password* : <br />
-        <input className="textboxmy padmy" type="password" name="password" id="" placeholder="*******" onChange={handleOnChange} required /><br /><br />
+        <input className="textboxmy padmy" type="password" name="password" id="" placeholder="*******" onChange={handleOnChange} required minLength={5} /><br /><br />
         <button type="submit" className={`togglemy-${props.color} togglemy`}>Signup</button>
         <p>Already have an account. Click here to <Link to="/login">Login</Link></p>
       </form>

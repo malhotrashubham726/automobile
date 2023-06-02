@@ -33,7 +33,7 @@ const Login = (props) => {
     }
 
     else {
-      alert("Invalid Credentials");
+      props.showAlert("Invalid Credentials");
     }
   }
 
