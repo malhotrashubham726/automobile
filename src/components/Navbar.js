@@ -34,7 +34,7 @@ const Navbar = (props) => {
         </div>
         <nav className="flexmy">
           <Link className={`firstmy navmy ${location.pathname === "/" ? "activemy" : " "}`} to="/">Home</Link>
-          {!localStorage.getItem("token") ? <><Link className={`navmy ${location.pathname === "/signup" ? "activemy" : " "}`} to="/signup">Signup</Link><Link className={`navmy ${location.pathname === "/login" ? "activemy" : " "}`} to="/login">Login</Link></> : <><Link className={`navmy ${location.pathname === "/services" ? "activemy" : " "}`} to="/services">Services</Link> <div className="buttonLink float-rightmy" onClick={handleLogout}>Logout</div></>}   
+          {!localStorage.getItem("token") ? <><Link className={`navmy ${location.pathname === "/signup" ? "activemy" : " "}`} to="/signup">Signup</Link><Link className={`navmy ${location.pathname === "/login" ? "activemy" : " "}`} to="/login">Login</Link></> : <><Link className={`navmy ${location.pathname === "/services" ? "activemy" : " "}`} to="/services">Services</Link> <div className="buttonLink" onClick={handleLogout}>Logout</div></>}   
           <Link className={`navmy ${location.pathname === "/booking" ? "activemy" : " "}`} to="/booking">Booking</Link>
           <Link className={`navmy ${location.pathname === "/contact" ? "activemy" : " "}`} to="/contact">Contact</Link>
         </nav>
