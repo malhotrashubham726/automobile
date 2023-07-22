@@ -36,7 +36,7 @@ function App() {
 
     setTimeout(() => {
       setAlert("");
-    } , 1000)
+    }, 500)
   })
 
   return (
@@ -44,7 +44,6 @@ function App() {
       <BookState>
       <Router>
       <Navbar showAlert={showAlert} alert={alert}/>
-      {/*<Alert alert={alert}/>*/}
       <Routes>
         <Route exact path="/" element={<Home color={color}/>}/>
         <Route exact path="/booking" element={<LetsBook color={color} showAlert={showAlert}/>}/>

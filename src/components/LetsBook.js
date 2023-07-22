@@ -31,20 +31,18 @@ const LetsBook = (props) => {
       ecarmodel : "",
       ephonenumber : "",
       eaddress : "",
-      efuel : "",
-      eservice : "",
       edate : ""
   })
   
     const updateBook = ((currentBooking) => {
       ref.current.click();
-      editBook({id : currentBooking._id , ecarmake : currentBooking.carmake , ecarmodel : currentBooking.carmodel , ephonenumber : currentBooking.phonenumber , eaddress : currentBooking.address , efuel : currentBooking.fuel , eservice : currentBooking.service , edate : currentBooking.date});
+      editBook({id: currentBooking._id, ecarmake: currentBooking.carmake, ecarmodel: currentBooking.carmodel, ephonenumber: currentBooking.phonenumber, eaddress: currentBooking.address, edate: currentBooking.date});
     })
   
     const handleClick = (e) => {
       console.log("Updating the note" , book);
       e.preventDefault();
-      editBooking(book.id , book.ecarmake , book.ecarmodel , book.ephonenumber , book.eaddress , book.efuel , book.eservice , book.edate);
+      editBooking(book.id, book.ecarmake, book.ecarmodel, book.ephonenumber, book.eaddress, book.edate);
       props.showAlert("Booking Edit Successfully")
       refClose.current.click();
   }
@@ -85,21 +83,7 @@ const LetsBook = (props) => {
                 <label htmlFor="eaddress" className='form-label'>Address</label>
                 <textarea className="form-control" name="eaddress" id="eaddress" cols="30" rows="10" value={book.eaddress} onChange={onChange}></textarea>
               </div>
-              <div className='mb-3'>
-                <label htmlFor="efuel" className='form-label'>Fuel Type</label><br />
-                Petrol:<input type="radio" name="efuel" id="Petrol" value={book.efuel} onChange={onChange}/>&nbsp;
-                Diesel:<input type="radio" name="efuel" id="Diesel" value={book.efuel} onChange={onChange}/>&nbsp;
-                LPG:<input type="radio" name="efuel" id="LPG" value={book.efuel} onChange={onChange}/>&nbsp;
-                Others:<input type="radio" name="efuel" id="Others" value={book.efuel} onChange={onChange}/>&nbsp;
-              </div>
               <div className="mb-3">
-                <label htmlFor="eservice" onChange={onChange} className='form-label'>Select Service</label>
-                <select name="eservice" id="">
-                  <option value="">Select from dropdown</option>
-                  <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
-                  <option value="Body Repair Service">Body Repair Service</option>
-                  <option value="Car Care Service">Car Care Service</option>
-                </select>
                 <div className="mb-3">
                   <label htmlFor="edate" className="form-label">Appointment date</label>
                   <input type="date" name="edate" id="edate" value={book.edate} onChange={onChange}/>

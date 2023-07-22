@@ -76,14 +76,14 @@ const BookState = (props) => {
         setState(delBooking);
       }
 
-      const editBooking = async(id , carmake , carmodel , phonenumber , address , fuel , service , date) => {
+      const editBooking = async(id, carmake, carmodel, phonenumber, address, date) => {
         const response = await fetch(`${host}/api/book/editbooking/${id}`, {
           method: "PUT",
           headers: {
             "auth-token": localStorage.getItem("token"),
             "Content-Type": "application/json"
           },
-          body: JSON.stringify({ id , carmake , carmodel , phonenumber , address , fuel , service , date })
+          body: JSON.stringify({ id, carmake, carmodel, phonenumber, address, date })
         })
         const json = await response.json();
         console.log(json);
@@ -95,8 +95,6 @@ const BookState = (props) => {
             myElement.carmodel = carmodel;
             myElement.phonenumber = phonenumber;
             myElement.address = address;
-            myElement.fuel = fuel;
-            myElement.service = service;
             myElement.date = date;
             break;
           }

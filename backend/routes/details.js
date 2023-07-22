@@ -2,9 +2,7 @@ const express = require("express");
 const router = express.Router();
 var fetchuser = require("../middleware/fetchuser");
 const Book = require("../models/Book");
-//const { route } = require("./auth");
 const { body, validationResult } = require("express-validator");
-//const { findByIdAndUpdate } = require("../models/Book");
 
 //Route 1 : Get All the Bookings
 router.post("/fetchbooking", fetchuser, async(req, res) => {
@@ -53,7 +51,7 @@ router.post("/bookuser" , fetchuser , [
 
 router.put("/editbooking/:id" , fetchuser , async(req , res) => {
   try{
-  const { phonenumber , carmake , carmodel , address , service , fuel , date } = req.body;
+  const { phonenumber, carmake, carmodel, address, date } = req.body;
   const updateBook = {};
   if(phonenumber) {
     updateBook.phonenumber = phonenumber;
@@ -69,14 +67,6 @@ router.put("/editbooking/:id" , fetchuser , async(req , res) => {
 
   if(address) {
     updateBook.address = address;
-  }
-
-  if(service) {
-    updateBook.service = service;
-  }
-
-  if(fuel) {
-    updateBook.fuel = fuel;
   }
 
   if(date) {
