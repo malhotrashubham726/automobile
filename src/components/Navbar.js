@@ -28,16 +28,16 @@ const Navbar = (props) => {
   })
 
   return (
-    <div className="stickmy">
-        <div className="blockmy">
-          <h1 className="headingmy">AutoMob-Mechanic</h1>
+    <div className="nav-stick">
+        <div className="block">
+          <h1 className="heading">AutoMob-Mechanic</h1>
+          <nav className="d-flex">
+            <Link className={`nav ${location.pathname === "/" ? "active" : " "}`} to="/">Home</Link>
+            {!localStorage.getItem("token") ? <><Link className={`nav ${location.pathname === "/signup" ? "active" : " "}`} to="/signup">Signup</Link><Link className={`nav ${location.pathname === "/login" ? "active" : " "}`} to="/login">Login</Link></> : <><Link className={`nav ${location.pathname === "/services" ? "active" : " "}`} to="/services">Services</Link> <div className="nav" onClick={handleLogout}>Logout</div></>}   
+            <Link className={`nav ${location.pathname === "/booking" ? "active" : " "}`} to="/booking">Booking</Link>
+            <Link className={`nav ${location.pathname === "/contact" ? "active" : " "}`} to="/contact">Contact</Link>
+          </nav>
         </div>
-        <nav className="flexmy">
-          <Link className={`firstmy navmy ${location.pathname === "/" ? "activemy" : " "}`} to="/">Home</Link>
-          {!localStorage.getItem("token") ? <><Link className={`navmy ${location.pathname === "/signup" ? "activemy" : " "}`} to="/signup">Signup</Link><Link className={`navmy ${location.pathname === "/login" ? "activemy" : " "}`} to="/login">Login</Link></> : <><Link className={`navmy ${location.pathname === "/services" ? "activemy" : " "}`} to="/services">Services</Link> <div className="buttonLink" onClick={handleLogout}>Logout</div></>}   
-          <Link className={`navmy ${location.pathname === "/booking" ? "activemy" : " "}`} to="/booking">Booking</Link>
-          <Link className={`navmy ${location.pathname === "/contact" ? "activemy" : " "}`} to="/contact">Contact</Link>
-        </nav>
         <Alert alert={props.alert}/>
     </div>
   );

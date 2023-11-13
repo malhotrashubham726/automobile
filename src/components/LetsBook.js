@@ -100,8 +100,8 @@ const LetsBook = (props) => {
   </div>
 
     <div>
-      <h3 className="align-centermy">Your Bookings</h3>
-      <div className="flex-cardsmy">
+      <h3 className="align-center">Your Bookings</h3>
+      <div className="flex-cards">
       {state.map((bookings) => {
         return <BookCards key={bookings._id} bookings={bookings} updateBook={updateBook} showAlert={props.showAlert}/>
       })}

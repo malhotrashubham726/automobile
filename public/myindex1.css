@@ -1,56 +1,54 @@
 body,html{
     height: 100%;
     width: 100%;
+    padding: 1px;
 }
 
-.blockmy{
+.block{
+    width: 100%;
     background-color: blue;
     padding: 20px;
     padding-bottom: 10px;
     color: white;
 }
 
-.headingmy{
-    font-size: 35px;
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
     font-weight: 700;
 }
 
-.navmy{
+.nav{
     color: white;
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
 }
 
-.flexmy{
+.d-flex{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: blue;
-    padding: 10px;
-    padding-bottom: 0px;
+    padding: 8px;
+    padding-left: 0px;
 }
 
-.stickmy{
+.nav-stick{
     position: sticky;
     top: 0px;
 }
 
-.navmy:hover,.buttonLink:hover{
-    color: black;
-    background-color: white;
+.nav:hover,.buttonLink:hover{
+    color: #a29d9d;
     cursor: pointer;
 }
 
-.buttonLink{
-    background-color: blue;
-    color: white;
-    font-size: 20px;
-    border: 0px solid blue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+.mb-lg{
+    margin-bottom: 80px;
+}
+
+.mb-sm{
+    margin-bottom: 20px;
 }
 
 .resize-img{
@@ -58,102 +56,96 @@ body,html{
     height: 25px;
 }
 
-.float-leftmy{
+.float-left{
     float: left;
-    height: 650px;
-    width: 40%;
+    height: 80vh;
+    width: 38%; 
 }
 
-.contentmy{
+.content{
     margin-left: 43%;
     margin-top: 15px;
 }
 
-.topmy{
+.top{
     margin-top: 0px;
 }
 
-.togglemy{
+.toggle{
     color: white;
     padding: 10px;
     border-radius: 4px;
 }
 
-.togglemy-blue{
+.toggle-blue{
     background-color: blue;
 }
 
-.togglemy-black{
+.toggle-black{
     background-color: black;
 }
 
-.cardsmy{
+.cards{
     padding: 10px;
-    margin: 20px 0px 0px 10px;
+    margin: 20px 0px 20px 10px;
     border: 2px solid black;
     text-align: center;
     border-radius: 10px;
 }
 
-.cardsmyservice{
-    height: 480px;
-    width: 420px;
+.cards-service{
+    width: 400px;
 }
 
-.frameimgmy{
+.frameimg{
     width: 90%;
     height: 60%;
+    border-radius: 15px;
 }
 
-.centermy{
+.center{
     margin-top: 40px;
     text-align: center;
     font-family:'Times New Roman', Times, serif;
 }
 
-.textboxmy{
-    width: 80%;
-    border-radius: 4px;
-}
-
-.center-boxmy{
-    margin: auto;
-    border: 4px solid black;
-    height: 280px;
-    width: 330px;
-    background-color: darkkhaki;
-}
-
-.padmy{
+.textbox{
+    width: 85%;
+    border-radius: 8px;
     padding: 10px;
 }
 
-.margin-padmy{
-    margin-top: 20px;
+.center-box{
+    margin: auto;
+    border: 4px solid black;
+    width: 50%;
+    padding: 15px;
+    background-color: darkkhaki;
 }
 
-.flex-cardsmy{
+.flex-cards{
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.activemy{
+.active{
     color: black !important;
     font-weight: 700;
 }
 
-.linkbtnmy{
+.linkbtn{
     color: white;
     text-decoration: none;
 }
 
-.datemy{
+.book-date{
     float: right;
     margin-top: 20px;
 }
 
-.alignmy{
+.left-align{
     text-align: left;
     margin-top: 60px;
 }
@@ -171,16 +163,7 @@ body,html{
     color: black;
 }
 
-.servicesmy{
-    margin-left: 40px;
-}
-
-.service-imgmy{
-    width: 45%;
-    height: 30%;
-}
-
-.align-centermy{
+.align-center{
     text-align: center;
     border: 2px solid black;
     background-color: pink;
@@ -188,16 +171,11 @@ body,html{
     margin-top: 20px;
 }
 
-.dark-modemy{
-    background-color: black;
-    color: white;
-}
-
-.alertmy{
+.show-alert{
     background-color: grey;
-    height: 70px;
-    padding: 20px;
-    font-weight: 800;
+    height: 40px;
+    padding: 10px;
+    font-weight: 500;
     margin-bottom: 20px;
     display: block;
 }
@@ -214,42 +192,245 @@ body,html{
     font-size: 40px;
 }
 
-.darkmy-mode{
-    background-color: black;
+.dark-mode{
+    background-image: url("https://wallpapercave.com/wp/wp4673215.png");
     height: 550px;
     width: 100%;
 }
 
-@media screen and (max-width:600px) {
-    .navmy,.buttonLink{
-        padding-left: 3px;
-        padding-right: 3px;
-        font-size: 17px;
+.fontsize-4{
+    font-size: 21px;
+}
+
+@media screen and (max-width: 800px) {
+    .center-box{
+        width: 70%;
     }
-    .firstmy {
-        margin-left: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .heading{
+        font-size: 26px;
+        font-weight: 650;
     }
-    .flex-cardsmy{
-       flex-direction: column;
+
+    .contact{
+        font-size: 35px;
     }
-    .cardsmy{
-        width: 320px;
-        float: right;
-        overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .nav,.buttonLink{
+        padding: 0px 7px;
+        font-size: 17.5px;
     }
-    .service-imgmy{
+
+    .center-box{
         width: 80%;
     }
-    .topmy{
+
+    .top{
         display: flex;
         flex-direction: column;
     }
-    .contentmy{
+
+    .content{
         margin-left: 20px;
     }
-    .float-leftmy{
-        margin-left: 20px;
+
+    .float-left{
+        height: 60vh;
+        width: 80%;
+    }
+
+    .top {
+        align-items: center;
+    }
+
+    .fontsize-4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .center-box{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav{
+        font-size: 15px;
+        padding: 0px 5.1px;
+    }
+
+    .heading{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .float-left{
+        height: 50vh;
+    }
+
+    .contact{
+        font-size: 30px;
+    }
+
+    .toggle{
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .cards-service{
         height: 400px;
-        width: 300px;
+    }
+
+    .center-box{
+        width: 100%;
+    }
+
+    .textbox{
+        width: 90%;
+    }
+
+    .alert-user{
+        font-size: 13px;
+    }
+
+    .fontawesome-user{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .heading{
+        font-size: 21.5px;
+        font-weight: 600;
+    }
+
+    .block{
+        padding: 13px;
+    }
+
+    .nav{
+        font-size: 14px;
+        padding: 0px 4.7px;
+    }
+
+    .contact{
+        font-size: 25px;
+    }
+
+    .textbox{
+        width: 98%;
+    }
+
+    .center-box{
+        padding: 10px;
+    }
+
+    .alert-user{
+        font-size: 12.5px;
+    }
+
+    .fontawesome-user{
+        font-size: 12.5px;
+    }
+
+    .fontsize-4{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .heading{
+        font-size: 20px;
+    }
+
+    .block{
+        padding-right: 1px;
+    }
+
+    .nav{
+        font-size: 4.6vw;
+        padding: 3.5px;
+    }
+
+    .alert-user{
+        font-size: 12px;
+    }
+
+    .fontawesome-user{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .heading{
+        font-size: 18.8px;
+    }
+
+    .nav{
+        font-size: 12.2px;
+        padding: 2.5px 3px;
+    }
+
+    .float-left{
+        height: 45vh;
+    }
+
+    .contact{
+        font-size: 20px;
+    }
+
+    .cards-service{
+        height: 450px;
+    }
+
+    .center-box{
+        padding: 7px;
+    }
+
+    .alert-user{
+        font-size: 11px;
+    }
+
+    .fontawesome-user{
+        font-size: 11px;
+    }
+
+    .show-alert{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .heading{
+        font-size: 16.6px;
+    }
+
+    .nav{
+        font-size: 11.7px;
+        padding: 2.5px 3.2px;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    .nav{
+        font-size: 11.2px;
+        padding: 2.5px 3px;
+    }
+
+    .heading{
+        font-size: 14.8px;
+    }
+
+    .cards-service{
+        height: 480px;
+    }
+
+    .mb-10{
+        margin-bottom: 10px;
     }
 }

@@ -43,15 +43,15 @@ const SignUp = (props) => {
   }
 
   return (
-    <div className="centermy center-boxmy">
+    <div className="center center-box">
       <form action="" onSubmit={handleOnSubmit}>
         Name* : <br />
-        <input className="textboxmy padmy" type="text" name="name" id="" placeholder="John" onChange={handleOnChange} required /><br /><br />
+        <input className="textbox" type="text" name="name" id="" placeholder="John" onChange={handleOnChange} required /><br /><br />
         Email* : <br />
-        <input className="textboxmy padmy" type="email" name="email" id="" placeholder="abc@mail.com" onChange={handleOnChange} required /><br /><br />
+        <input className="textbox" type="email" name="email" id="" placeholder="abc@mail.com" onChange={handleOnChange} required /><br /><br />
         Password* : <br />
-        <input className="textboxmy padmy" type="password" name="password" id="" placeholder="*******" onChange={handleOnChange} required minLength={5} /><br /><br />
-        <button type="submit" className={`togglemy-${props.color} togglemy`}>Signup</button>
+        <input className="textbox" type="password" name="password" id="" placeholder="*******" onChange={handleOnChange} required minLength={5} /><br /><br />
+        <button type="submit" className={`toggle-${props.color} toggle`}>Signup</button>
         <p>Already have an account. Click here to <Link to="/login">Login</Link></p>
       </form>
     </div>

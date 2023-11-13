@@ -35,7 +35,7 @@ const Booking = (props) => {
   }
 
   return (
-    <div className="centermy">
+    <div className="center">
       <h2>Book Your Service</h2>
       <form action="">
         Phone Number: <br /><input type="tel" name="phonenumber" id="" value={book.phonenumber} onChange={handleOnChange} required/>
@@ -60,9 +60,9 @@ const Booking = (props) => {
         Appointment Date: <br /><input type="date" name="date" id="" onChange={handleOnChange} required/>
         <br /><br />
         Address: <br />
-        <textarea name="address" id="" onChange={handleOnChange} value={book.address} cols="30" rows="10" required></textarea>
+        <textarea name="address" id="" onChange={handleOnChange} value={book.address} cols="30" rows="5" required></textarea>
         <br /><br />
-        <button disabled={book.phonenumber.length<8 || book.carmake.length<3 || book.carmodel.length<3 || book.address.length<7 || book.fuel===""} className="togglemy togglemy-blue" onClick={handleOnClick}>Book</button>
+        <button disabled={book.phonenumber.length<8 || book.carmake.length<3 || book.carmodel.length<3 || book.address.length<7 || book.fuel===""} className="toggle toggle-blue" onClick={handleOnClick}>Book</button>
       </form>
       
     </div>

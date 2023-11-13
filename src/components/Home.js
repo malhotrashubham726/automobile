@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Home = (props) => {
 
   return (
-    <div className="topmy">
-      <img className="float-leftmy" src={image} alt="" />
-      <div className="contentmy">
+    <div className="top">
+      <img className="float-left" src={image} alt="" />
+      <div className="content">
       <h3>About Us</h3>
       <p>"One stop solution to get your car repaired and serviced"</p>
       <p>
@@ -29,7 +29,7 @@ const Home = (props) => {
         own
       </p>
       <br />
-      <button className={`togglemy-${props.color} togglemy`}><Link className="linkbtnmy" to="/services">Explore More</Link></button>
+      <button className={`toggle-${props.color} toggle mb-lg`}><Link className="linkbtn" to="/services">Explore More</Link></button>
       </div>
     </div>
   );
