@@ -44,10 +44,14 @@ const Login = (props) => {
   return (
     <div className="center center-box mb-lg">
       <form action="" onSubmit={handleSubmit}>
-        Email* : <br />
-        <input className="textbox" type="email" name="email" id="" placeholder="abc@mail.com" required onChange={handleOnChange}/><br /><br />
-        Password* : <br />
-        <input className="textbox" type="password" name="password" id="" placeholder="*******" required onChange={handleOnChange}/><br /><br />
+        <div>
+          <i class="fa-solid fa-user position-relative"></i>
+          <input className="textbox" type="email" name="email" id="" placeholder="Username" required onChange={handleOnChange}/><br/><br/>
+        </div>
+        <div>
+          <i class="fa-solid fa-lock position-relative"></i>
+          <input className="textbox" type="password" name="password" id="" placeholder="Password" required onChange={handleOnChange}/><br /><br />
+        </div>
         <button type='submit' className={`toggle-${props.color} toggle mb-sm`}>Login</button>
       </form>
     </div>  

@@ -36,6 +36,7 @@ body,html{
 .nav-stick{
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 .nav:hover,.buttonLink:hover{
@@ -109,18 +110,27 @@ body,html{
     font-family:'Times New Roman', Times, serif;
 }
 
+.position-relative{
+    position: relative;
+    left: 50px;
+    z-index: 0;
+}
+
 .textbox{
-    width: 85%;
+    width: 45%;
     border-radius: 8px;
+    margin: 15px;
     padding: 10px;
+    padding-left: 70px;
 }
 
 .center-box{
     margin: auto;
-    border: 4px solid black;
-    width: 50%;
+    width: 100%;
+    height: 90vh;
     padding: 15px;
-    background-color: darkkhaki;
+    padding-top: 50px;
+    background-image: url("https://wallpapercave.com/wp/wp4673215.png");
 }
 
 .flex-cards{
@@ -176,7 +186,7 @@ body,html{
     height: 40px;
     padding: 10px;
     font-weight: 500;
-    margin-bottom: 20px;
+    width: 100%;
     display: block;
 }
 
@@ -203,8 +213,8 @@ body,html{
 }
 
 @media screen and (max-width: 800px) {
-    .center-box{
-        width: 70%;
+    .textbox{
+        width: 52%;
     }
 }
 
@@ -217,16 +227,19 @@ body,html{
     .contact{
         font-size: 35px;
     }
+
+    .textbox{
+        margin: 10px;
+        padding: 8px;
+        padding-left: 60px;
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .nav,.buttonLink{
         padding: 0px 7px;
         font-size: 17.5px;
-    }
-
-    .center-box{
-        width: 80%;
     }
 
     .top{
@@ -250,11 +263,20 @@ body,html{
     .fontsize-4{
         font-size: 18px;
     }
+
+    .textbox{
+        width: 65%;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .center-box{
-        width: 90%;
+    .textbox{
+        width: 73%;
+        padding-left: 55px;
+    }
+
+    .position-relative{
+        left: 44px;
     }
 }
 
@@ -286,12 +308,8 @@ body,html{
         height: 400px;
     }
 
-    .center-box{
-        width: 100%;
-    }
-
     .textbox{
-        width: 90%;
+        width: 82%;
     }
 
     .alert-user{
@@ -323,11 +341,8 @@ body,html{
     }
 
     .textbox{
-        width: 98%;
-    }
-
-    .center-box{
-        padding: 10px;
+        width: 82%;
+        padding-left: 50px;
     }
 
     .alert-user{
@@ -388,10 +403,6 @@ body,html{
         height: 450px;
     }
 
-    .center-box{
-        padding: 7px;
-    }
-
     .alert-user{
         font-size: 11px;
     }
@@ -402,6 +413,10 @@ body,html{
 
     .show-alert{
         height: 50px;
+    }
+
+    .textbox{
+        width: 80%;
     }
 }
 
@@ -416,7 +431,7 @@ body,html{
     }
 }
 
-@media screen and (max-width: 225px) {
+@media screen and (max-width: 223px) {
     .nav{
         font-size: 11.2px;
         padding: 2.5px 3px;
@@ -432,5 +447,10 @@ body,html{
 
     .mb-10{
         margin-bottom: 10px;
+    }
+
+    .textbox{
+        width: 78%;
+        padding-left: 40px;
     }
 }
