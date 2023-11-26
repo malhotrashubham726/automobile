@@ -35,8 +35,8 @@ const Booking = (props) => {
   }
 
   return (
-    <div className="center">
-      <h2>Book Your Service</h2>
+    <div className="center font-size-md">
+      <h3 className='mb-10'>Book Your Service</h3>
       <form action="">
         Phone Number: <br /><input type="tel" name="phonenumber" id="" value={book.phonenumber} onChange={handleOnChange} required/>
         <br /><br />

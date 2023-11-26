@@ -6,7 +6,7 @@ const BodyRepair = (props) => {
   return (
     <div className='top'>
       <img className="float-left" src={carbody} alt="" />
-      <div className='content'>
+      <div className='content font-size-md'>
         <h3>Body Repair Service</h3>
         <p>Paint scratches and dents degrades the appearance of your car?Opt for AutoMob-Mechanic's body repair service.This service aims at:</p>
         <ul>

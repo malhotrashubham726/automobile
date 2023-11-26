@@ -6,7 +6,7 @@ const CarCare = (props) => {
   return (
     <div className='top'>
       <img className='float-left' src={carcare} alt="" />
-      <div className="content">
+      <div className="content font-size-md">
         <h3>Car Care Service</h3>
         <p>Looking to Keep your car neat and clean? Save money and opt for Auto-Mechanic's car care service.We offer an extensive range of car wash and cleaning services such as:</p>
         <ul>

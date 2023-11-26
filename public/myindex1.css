@@ -107,7 +107,6 @@ body,html{
 .center{
     margin-top: 40px;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
 }
 
 .position-relative{
@@ -124,13 +123,22 @@ body,html{
     padding-left: 70px;
 }
 
+.login-btn{
+    padding-left: 0px;
+    margin-left: 25px;
+}
+
+::placeholder{
+    color: black;
+}
+
 .center-box{
     margin: auto;
     width: 100%;
     height: 90vh;
     padding: 15px;
     padding-top: 50px;
-    background-image: url("https://wallpapercave.com/wp/wp4673215.png");
+    background-image: url("https://wallpapercave.com/wp/wp2774691.png");
 }
 
 .flex-cards{
@@ -234,6 +242,11 @@ body,html{
         padding-left: 60px;
         width: 60%;
     }
+
+    .login-btn{
+        padding-left: 0px;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -248,7 +261,8 @@ body,html{
     }
 
     .content{
-        margin-left: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .float-left{
@@ -271,12 +285,26 @@ body,html{
 
 @media screen and (max-width: 500px) {
     .textbox{
-        width: 73%;
+        width: 75%;
         padding-left: 55px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .login-btn{
+        padding-left: 0px;
     }
 
     .position-relative{
         left: 44px;
+    }
+
+    .font-size-md{
+        font-size: 15px;
+    }
+
+    .font-size-md h3{
+        font-size: 18px;
     }
 }
 
@@ -304,12 +332,18 @@ body,html{
         font-size: 13px;
     }
 
+    .login-btn{
+        font-size: 15px;
+    }
+
     .cards-service{
         height: 400px;
     }
 
     .textbox{
-        width: 82%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 85%;
     }
 
     .alert-user{
@@ -341,8 +375,21 @@ body,html{
     }
 
     .textbox{
-        width: 82%;
-        padding-left: 50px;
+        width: 94%;
+        margin: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding: 5px;
+        padding-left: 45px;
+    }
+
+    .login-btn{
+        padding-left: 0px;
+        margin-left: 10px;
+    }
+
+    .position-relative{
+        left: 29px;
     }
 
     .alert-user{
@@ -379,6 +426,33 @@ body,html{
     .fontawesome-user{
         font-size: 12px;
     }
+
+    .font-size-md{
+        font-size: 14px;
+    }
+
+    .font-size-md h3{
+        font-size: 17px;
+    }
+
+    .textbox{
+        width: 93%;
+        padding: 4px;
+        padding-left: 45px;
+        font-size: 14.5px;
+    }
+
+    .font-size-icon{
+        font-size: 14.5px;
+    }
+
+    .login-btn{
+        padding-left: 0px;
+    }
+
+    .position-relative{
+        left: 27px;
+    }
 }
 
 @media screen and (max-width: 270px) {
@@ -387,7 +461,7 @@ body,html{
     }
 
     .nav{
-        font-size: 12.2px;
+        font-size: 12px;
         padding: 2.5px 3px;
     }
 
@@ -416,7 +490,7 @@ body,html{
     }
 
     .textbox{
-        width: 80%;
+        width: 92%;
     }
 }
 
@@ -428,6 +502,23 @@ body,html{
     .nav{
         font-size: 11.7px;
         padding: 2.5px 3.2px;
+    }
+
+    .position-relative{
+        left: 24px;
+    }
+
+    .textbox{
+        padding-left: 35px;
+        font-size: 13.5px;
+    }
+
+    .font-size-icon{
+        font-size: 13.5px;
+    }
+
+    .login-btn{
+        padding-left: 0px;
     }
 }
 
@@ -449,8 +540,21 @@ body,html{
         margin-bottom: 10px;
     }
 
+    .position-relative{
+        left: 21.5px;
+    }
+
     .textbox{
-        width: 78%;
-        padding-left: 40px;
+        width: 91.5%;
+        padding-left: 31px;
+        font-size: 13px;
+    }
+    
+    .font-size-icon{
+        font-size: 13px;
+    }
+
+    .login-btn{
+        padding-left: 0px;
     }
 }

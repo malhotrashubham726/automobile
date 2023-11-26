@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Frames = (props) => {
   return (
-    <div className="flex-cards">
+    <div className="flex-cards font-size-md">
       <div className="cards cards-service">
         <h3>Maintenance Service</h3>
         <img className="frameimg" src={img1} alt="" />

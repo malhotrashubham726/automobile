@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Home = (props) => {
 
   return (
-    <div className="top">
+    <div className="top font-size-md">
       <img className="float-left" src={image} alt="" />
       <div className="content">
       <h3>About Us</h3>
-      <p>"One stop solution to get your car repaired and serviced"</p>
+      <p className="">"One stop solution to get your car repaired and serviced"</p>
       <p>
         An AutoMob-Mechanic,we aim to make the car repair and service experience
         straightforward by providing services for repairing,servicing and

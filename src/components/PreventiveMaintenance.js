@@ -6,7 +6,7 @@ const PreventiveMaintenance = (props) => {
   return (
     <div className='top'>
       <img className='float-left' src={maintenanceimg} alt="" />
-      <div className='content'>
+      <div className='content font-size-md'>
         <h3>Maintenance Service</h3>
         <p>Looking to keep your car functioning smoothly! Save money and opt for Auto-Mob Mechanic's periodic maintenance service.This service aims at</p>
         <ul>

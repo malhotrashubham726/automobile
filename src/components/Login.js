@@ -43,16 +43,16 @@ const Login = (props) => {
 
   return (
     <div className="center center-box mb-lg">
-      <form action="" onSubmit={handleSubmit}>
+      <form className='cred-form' action="" onSubmit={handleSubmit}>
         <div>
-          <i class="fa-solid fa-user position-relative"></i>
-          <input className="textbox" type="email" name="email" id="" placeholder="Username" required onChange={handleOnChange}/><br/><br/>
+        <i class="fa-solid fa-envelope position-relative font-size-icon"></i>
+          <input style={{border: "2px solid black",cursor: "pointer"}} className="textbox mt-lg" type="email" name="email" id="" placeholder="Email" required onChange={handleOnChange}/><br/><br/>
         </div>
         <div>
-          <i class="fa-solid fa-lock position-relative"></i>
-          <input className="textbox" type="password" name="password" id="" placeholder="Password" required onChange={handleOnChange}/><br /><br />
+          <i class="fa-solid fa-lock position-relative font-size-icon"></i>
+          <input style={{border: "2px solid black",cursor: "pointer"}} className="textbox" type="password" name="password" id="" placeholder="Password" required onChange={handleOnChange}/><br /><br />
         </div>
-        <button type='submit' className={`toggle-${props.color} toggle mb-sm`}>Login</button>
+        <button type='submit' className='toggle-blue toggle textbox mb-sm login-btn'>Login</button>
       </form>
     </div>  
     )

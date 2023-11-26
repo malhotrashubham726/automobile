@@ -46,19 +46,19 @@ const SignUp = (props) => {
     <div className="center center-box">
       <form action="" onSubmit={handleOnSubmit}>
         <div>
-          <i class="fa-solid fa-user position-relative"></i>
-          <input className="textbox" type="text" name="name" id="" placeholder="Username" onChange={handleOnChange} required /><br /><br />
+          <i class="fa-solid fa-user position-relative font-size-icon"></i>
+          <input style={{backgroundColor: "white",border: "2px solid black",cursor: "pointer"}} className="textbox" type="text" name="name" id="" placeholder="Username" onChange={handleOnChange} required /><br /><br />
         </div>
         <div>
-          <i class="fa-solid fa-envelope position-relative"></i>
-          <input className="textbox" type="email" name="email" id="" placeholder="Email" onChange={handleOnChange} required /><br /><br />
+          <i class="fa-solid fa-envelope position-relative font-size-icon"></i>
+          <input style={{backgroundColor: "white",border: "2px solid black",cursor:"pointer"}} className="textbox" type="email" name="email" id="" placeholder="Email" onChange={handleOnChange} required /><br /><br />
         </div>
         <div>
-          <i class="fa-solid fa-lock position-relative"></i>
-          <input className="textbox" type="password" name="password" id="" placeholder="Password" onChange={handleOnChange} required minLength={5} /><br /><br />
+          <i class="fa-solid fa-lock position-relative font-size-icon"></i>
+          <input style={{backgroundColor: "white",border: "2px solid black",cursor:"pointer"}} className="textbox" type="password" name="password" id="" placeholder="Password" onChange={handleOnChange} required minLength={5} /><br /><br />
         </div>
-        <button type="submit" className={`toggle-${props.color} toggle`}>Signup</button>
-        <p style={{color: "white"}}>Already have an account. Click here to <Link to="/login">Login</Link></p>
+        <button type="submit" className="toggle-blue toggle textbox login-btn mb-10">Signup</button>
+        <p className="font-size-icon">Already have an account. Click here to <Link to="/login">Login</Link></p>
       </form>
     </div>
   );
