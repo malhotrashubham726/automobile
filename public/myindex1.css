@@ -60,11 +60,11 @@ body,html{
 .float-left{
     float: left;
     height: 80vh;
-    width: 38%; 
+    width: 45%; 
 }
 
 .content{
-    margin-left: 43%;
+    margin-left: 47%;
     margin-top: 15px;
 }
 
@@ -247,6 +247,46 @@ body,html{
     .login-btn{
         padding-left: 0px;
         margin-left: 20px;
+    }
+
+    .float-left{
+        height: 60vh;
+        width: 80%;
+    }
+
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-height: 700px) {
+    .float-left{
+        height: 50vh;
+        width: 80%;
+    }
+
+    .content{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        align-items: center;
     }
 }
 
