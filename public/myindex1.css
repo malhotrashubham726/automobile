@@ -212,7 +212,8 @@ body,html{
 
 .dark-mode{
     background-image: url("https://wallpapercave.com/wp/wp4673215.png");
-    height: 550px;
+    /* height: 550px; */
+    height: 80vh;
     width: 100%;
 }
 
